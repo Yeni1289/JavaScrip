@@ -1,0 +1,37 @@
+// pensamientosExistencialesDeUnaTostadora.js
+
+const versos = [
+    "Crujiente mi alma, dorado mi destino.",
+    "¿Para qué tuesto si mañana me apagan?",
+    "Entre pan y acero, encontré la verdad.",
+    "El enchufe es mi nexo con el universo.",
+    "Sueño con mantequilla derretida...",
+    "¿Y si el pan nunca baja?",
+    "El microondas no me entiende."
+];
+
+const sabiduriaAbsurda = [
+    "Solo un pez que vuela entiende el silencio del queso.",
+    "Las puertas automáticas nos observan con juicio secreto.",
+    "El tiempo no existe... salvo cuando tienes WiFi lento.",
+    "Nunca confíes en una ardilla con traje.",
+    "Las cucharas son los poetas del cajón.",
+    "El universo es binario, excepto los jueves."
+];
+
+function generarPoemaTostador() {
+    const linea1 = versos[Math.floor(Math.random() * versos.length)];
+    const linea2 = versos[Math.floor(Math.random() * versos.length)];
+    const linea3 = versos[Math.floor(Math.random() * versos.length)];
+    return `${linea1}\n${linea2}\n${linea3}\n`;
+}
+
+function pensarComoTostadora() {
+    console.log("🤖 Pensamientos Existenciales de una Tostadora 🤖\n");
+    console.log(generarPoemaTostador());
+    console.log("🥄 Sabiduría del día:");
+    console.log(sabiduriaAbsurda[Math.floor(Math.random() * sabiduriaAbsurda.length)]);
+    console.log("\nFin de transmisión 🛸\n");
+}
+
+pensarComoTostadora();
